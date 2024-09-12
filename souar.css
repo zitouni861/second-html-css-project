@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: rgb(27, 1, 1);
+    display: flex;
+}
+.side-bar .header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+}
+
+.side-bar .profile-pic img{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+    
+    
+    
+}
+.side-bar .header p{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: antiquewhite;
+}
+.side-bar{
+    background-color: rgba(228, 216, 216, 0.118);
+    height: 100vh;
+    width: 60px;
+    padding: 3px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+    transition: .3s;
+    flex-shrink: 0;
+}
+.side-bar li{
+    
+    border-radius: 8px;
+
+}
+.side-bar li a {
+    display: flex;
+    text-decoration: none;
+    gap: 30px;
+    font-size: 25px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+.side-bar:hover{
+    width: 260px;
+}
+.side-bar li a:hover,.dashboard{
+    background-color: rgba(228, 216, 216, 0.118);
+
+}
+.side-bar .logout{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    margin-top: auto;
+    margin-bottom: 8px;  
+}
+.content {
+    width: 100%;  
+    
+}
+.title-info div{
+    background-color: rgba(136, 9, 9, 0.686);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 8px;
+    padding: 5px;
+    margin: 3px;
+    
+}
+.main-content{
+    height: 150px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.main-content div{
+    background-color: rgb(174, 19, 19);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+}
+.title-info2{
+    width: 100%;
+    height: 20px;
+    margin:1px;
+    padding: 2px;
+    
+}
+.title-info2 div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(119, 4, 4);
+    gap: 10px;
+    height: 20px;
+    font-size: 16px;
+    padding: 3px ;
+    margin: 0;
+    border-radius: 8px;
+}
+.product-list{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.product-list table{
+    width: 100%;
+    padding: 3px 0;
+    margin: 3px 0;
+}
+.product-list table tr{
+    text-align: center;
+}
+.product-list table th{
+    background-color: rgb(126, 28, 28);
+    border-radius: 8px;
+    text-wrap: wrap;
+}
+.product-list table td{
+    background-color: rgb(95, 58, 58);
+    padding: 3px;
+    margin: 3px;
+    gap: 5px;
+    border-radius: 8px;
+    text-wrap: wrap;
+}
