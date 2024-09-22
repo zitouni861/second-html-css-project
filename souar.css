@@ -1,162 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-body{
-    background-color: rgb(27, 1, 1);
-    display: flex;
-}
-.side-bar .header{
-    display: flex;
-    align-items: center;
-    justify-content: start;
+* {
     margin: 0;
     padding: 0;
 }
-
-.side-bar .profile-pic img{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin: 0;
-    padding: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid white;
-    
-    
-    
-    
+body {
+    background-color: rgb(101, 60, 39);
 }
-.side-bar .header p{
-    text-transform: capitalize;
-    font-size: 30px;
-    color: antiquewhite;
+.head {
+    width: 90%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.side-bar{
-    background-color: rgba(228, 216, 216, 0.118);
-    height: 100vh;
-    width: 60px;
-    padding: 3px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    overflow: hidden;
-    transition: .3s;
-    flex-shrink: 0;
-}
-.side-bar li{
-    
-    border-radius: 8px;
-
-}
-.side-bar li a {
-    display: flex;
-    text-decoration: none;
-    gap: 30px;
-    font-size: 25px;
-    margin: 5px;
-    padding: 8px;
-    border-radius: 8px;
-    
-}
-.side-bar:hover{
-    width: 260px;
-}
-.side-bar li a:hover,.dashboard{
-    background-color: rgba(228, 216, 216, 0.118);
-
-}
-.side-bar .logout{
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 0, 0);
-    margin-top: auto;
-    margin-bottom: 8px;  
-}
-.content {
-    width: 100%;  
-    
-}
-.title-info div{
-    background-color: rgba(136, 9, 9, 0.686);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    height: 20px;
-    gap: 8px;
-    padding: 5px;
-    margin: 3px;
-    
-}
-.main-content{
-    height: 150px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-.main-content div{
-    background-color: rgb(174, 19, 19);
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    margin: 2px;
-    border-radius: 8px;
+.head p {
     font-size: 20px;
 }
-.numbers{
-    display: flex;
-    flex-direction: column;
+.inputs {
+    padding: 5px;
 }
-.title-info2{
-    width: 100%;
-    height: 20px;
-    margin:1px;
+input {
+    background-color: rgb(201, 147, 107);
+    outline: none;
+    border: none;
+    color: white;
+    height: 30px;
+    margin: 2px;
     padding: 2px;
-    
+    border-radius: 4px;
 }
-.title-info2 div{
+input:focus {
+    background-color: rgb(172, 131, 102);
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+#title, #count, #category, #search {
+    width: 95%;
+}
+#price, #taxes, #ads, #discount {
+    width: 20%;
+}
+#total {
+    display: inline-block;
+    background-color: rgb(134, 63, 63);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+}
+#total::before {
+    content: "Total: ";
+}
+.Btn {
+    width: 96%;
+    border-radius: 6px;
+    height: 30px;
+    background-color: rgb(159, 64, 64);
+    margin: 3px;
+    transition: 0.5s;
+    border: none;
+    outline: none;
+}
+.Btn:hover, #deleteAll button:hover {
+    letter-spacing: 0.6px;
+    background-color: rgb(131, 29, 29);
+}
+.outputs {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: rgb(119, 4, 4);
-    gap: 10px;
-    height: 20px;
-    font-size: 16px;
-    padding: 3px ;
-    margin: 0;
-    border-radius: 8px;
+    width: 94%;
+    padding: 0 0 0 10px;
 }
-.product-list{
-    display: flex;
-    width: 100%;
-    height: 300px;
+.outputs input {
+    margin: auto;
+    width: 90%;
 }
-.product-list table{
-    width: 100%;
-    padding: 3px 0;
-    margin: 3px 0;
+.outputs button {
+    width: 50%;
 }
-.product-list table tr{
+#table {
+    width: 95%;
+}
+thead {
+    background-color: rgb(136, 50, 50);
+}
+tbody {
+    color: aliceblue;
     text-align: center;
 }
-.product-list table th{
-    background-color: rgb(126, 28, 28);
-    border-radius: 8px;
-    text-wrap: wrap;
+th, td {
+    border-radius: 4px;
+    margin: 2px;
 }
-.product-list table td{
-    background-color: rgb(95, 58, 58);
-    padding: 3px;
+#deleteAll
+{
+    width: 95%;
+    text-align: center;
+    
+}
+#deleteAll button{
+    width: 100%;
+    border-radius: 6px;
+    height: 30px;
+    background-color: rgb(159, 64, 64);
     margin: 3px;
-    gap: 5px;
-    border-radius: 8px;
-    text-wrap: wrap;
+    transition: 0.5s;
+    border: none;
+    outline: none;
 }
